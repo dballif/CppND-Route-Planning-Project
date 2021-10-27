@@ -51,8 +51,8 @@ RouteModel::Node *RoutePlanner::NextNode() {
 	RouteModel::Node *low_f = open_list.back();
 
 	//Remove the low_f from open_list
-  	open_list.erase(open_list.end());
-  
+  	open_list.pop_back();
+
   	//Return the pointer
   	return low_f;
 }
